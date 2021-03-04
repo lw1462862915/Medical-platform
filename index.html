@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>实战-挂号平台</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/index_Layout.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/index_css.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/ui.css">
+	<script type="text/javascript" src="./JS/JQuery_v4.1.3.js"></script>
+
+</head>
+<body>
+	<!-- 
+	top
+	header   header-logo  
+			 header-search 搜索
+	nav      nav-menu
+	banner	 banner-slider 幻灯片 
+			 banner-serach 快速搜索 	        
+			 banner-help 帮助中心
+	content	 tab / tab-hospital tab-department
+			 news
+			 close 	
+	footer
+	 -->
+	<div id="top" class="top clearfix">
+	 	<div class="wrap clearfix">
+		<p class="top-left">010-114/116114电话预约</p>
+		<p class="top-right">
+			欢迎来到城市预约挂号统一平台&emsp;请&emsp;&emsp;
+			<a href="#">登录</a>&emsp;
+			<a href="#">注册</a>&emsp;&emsp;&emsp;&emsp;
+			<a href="#">帮助中心</a>
+		</p>
+	 	</div>
+	</div>
+
+	<div id="header" class="header">
+		<div class="wrap clearfix">
+			<a class="logo" href="#"><img src="./IMG/logo.png" alt="logo"></a>
+			
+			<div class="search ui-search">
+				<div class="ui-search-selected">医院</div>
+				<div class="ui-search-list">
+					<a href="#1">科室</a>
+					<a href="#1">疾病</a>
+					<a href="#1">医院</a>
+				</div>
+				<input type="text" name="search-content" class="ui-search-input" placeholder="请输入内容"/>
+				<a href="#" class="ui-search-submit">&nbsp;</a>
+			</div>	
+	
+		</div>
+	</div>
+
+	<div id="nav" class="nav">
+		<div class="wrap">
+			<nav>
+				<a href="#">首页</a>
+				<a href="#">按医院挂号</a>
+				<a href="#">按科室挂号</a>
+				<a href="#">按疾病挂号</a>
+				<a href="#">最新公告</a>
+				<a href="#">社会知名医院</a>
+			</nav>
+	 	</div>
+	</div>
+	 
+	<div id="banner" class="banner wrap">
+	 	<div class="banner-side">
+		 	<div class="banner-top">
+				<b>北京协和医院</b>
+				<span class="name">关注医院</span>
+				<span class="list">
+					<b>等级：</b>三级甲等
+					<b>区域：</b>东城区
+					<b>分类：</b>中国医科院所属医院
+				</span>
+		 	</div>
+		 	<hr/>
+		 	<div class="banner-buttom">
+				<p><img src="./IMG/hospital-1.jpg" alt="#"></p>
+				<p class="text">
+					<span>[东院]北京市东城区陆家嘴一号[西院]北京市西城区大木杨互通41号</span><br/>
+					<span>http://www.imooc.com</span><br/>
+					<span>[东院]北京市东城区陆家嘴一号[西院]北京市西城区大木杨互通41号</span><br/>
+					<span>故宫位于北京市东城区长安街上,是北京市的中心,地址是西城区景山前街4号。 北京故宫的地理位置东起北池子大街,西到北长街,北起景山前街,南到东长安街。 故宫旧称紫禁城。是明、清两代的皇宫,无与伦比的古代建筑杰作,世界现存最大、最完整的古建筑群。</span>
+				</p>
+				<p class="img"><img src="./IMG/map-1.png" alt="#">
+				</p>
+		 	</div>
+		</div>
+	</div>
+
+	<div id="content" class="content clearfix">
+	 	<div class="content-tab">
+			<nav class="caption">
+				<a href="#" class="item item_focus">预约挂号</a>
+				<a href="#" class="item ">医院介绍</a>
+				<a href="#" class="item ">预约须知</a>
+				<a href="#" class="item ">停诊信息</a>
+				<a href="#" class="item ">查询取消</a>
+			</nav>
+		 	
+		 	<div class="block">
+		 		<div class="item">
+		 			<div class="content-news">
+		 				<table class="table_1" cellspacing="0" cellpadding="0">
+		 					<tr class="table_trtow"><td colspan="2">开发预约科室</td></tr>
+		 					<tr>
+		 						<td class="list_1">2031</td>
+		 						<td>
+		 							<table class="table_2">
+		 								<tr>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 								<tr>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 								<tr>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 							</table>
+		 						</td>
+		 					</tr>
+		 					<tr>
+		 						<td class="list_1">专科</td>
+		 						<td>
+		 							<table class="table_2">
+		 								<tr>
+		 									<td><a href="scheduling.html">多发性硬化专科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 								<tr>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 								<tr>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 							</table>
+		 						</td>
+		 					</tr>
+		 					<tr>
+		 						<td class="list_1">内科</td>
+		 						<td>
+		 							<table class="table_2">
+		 								<tr>
+		 									<td><a href="scheduling.html">脑瘤内科门诊</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 								<tr>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 								<tr>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 							</table>
+		 						</td>
+		 					</tr>
+		 					<tr>
+		 						<td class="list_1">内科</td>
+		 						<td>
+		 							<table class="table_2">
+		 								<tr>
+		 									<td><a href="scheduling.html">脑瘤内科门诊</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 								<tr>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 								<tr>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 									<td><a href="scheduling.html">特殊门诊科</a></td>
+		 								</tr>
+		 							</table>
+		 						</td>
+		 					</tr>
+		 				</table>
+		 			</div>
+		 			<div class="content-close">
+		 				<div class="content-close-top">
+		 					预约规则<span>(更新时间每日8:30更新)</span>
+		 				</div>
+		 				<div class="content-close-but">
+
+		 					<p><span>预约周期：</span>7天</p>
+		 					<p><span>挂号时间：</span>8:30</p>
+		 					<p><span>停挂时间：</span>下午14:00故宫位于北京市东城区长安街上,是北京市的中心,地址是西城区景山前街4号。</p>
+		 					<p><span>退号时间：</span>确诊前一工作日14:00前取消</p>
+		 					<p><span>特殊规则：</span>故宫位于北京市东城区长安街上,是北京市的中心,地址是西城区景山前街4号。 北京故宫的地理位置东起北池子大街,西到北长街,北起景山前街,南到东长安街。 故宫旧称紫禁城。是明、清两代的皇宫,无与伦比的古代建筑杰作,世界现存最大、最完整的古建筑群。</p>
+		 				</div>
+		 			</div>
+		 		</div>
+		 		
+		 		<div class="item block-item_2" style="display: none">
+					<p>
+						北京协和医院是一所位于北京市东城区，集医疗、科研、教学为一体的大型综合医院。它隶属于中国协和医科大学(2006年改为北京协和医学院/清华大学医学部)，是其临床医学院，同时也是中国医学科学院的临床医学研究所，中华人民共和国卫生部指定的诊治疑难重症的技术指导中心之一。北京协和医院在中国乃至世界享有盛名。医院成立于1921年。现任院长赵玉沛。北京协和医院是中国最早承担外宾医疗任务的单位，医院专门设立外宾和高干门诊部，开设专门的高干、外宾、特需病区。2006年7月28日被中国奥委会定为“国家队运动员医疗服务指定医院”。
+					</p>
+					<p>
+						2017年11月11日下午，复旦大学医院管理研究所正式发布了《2016年度中国医院排行榜》和《2016年度中国医院专科声誉排行榜》，北京协和医院名列榜首 [1]  。
+					</p>
+					<p>2018年12月4日消息，被国家卫健委公布为首批肿瘤多学科诊疗试点医院。 [2]  2019年11月10日，复旦版《2018年度中国医院排行榜》发布，北京协和居首。 [3]
+					</p>
+					<p>
+						北京协和医院是一所位于北京市东城区，集医疗、科研、教学为一体的大型综合医院。它隶属于中国协和医科大学(2006年改为北京协和医学院/清华大学医学部)，是其临床医学院，同时也是中国医学科学院的临床医学研究所，中华人民共和国卫生部指定的诊治疑难重症的技术指导中心之一。北京协和医院在中国乃至世界享有盛名。医院成立于1921年。现任院长赵玉沛。北京协和医院是中国最早承担外宾医疗任务的单位，医院专门设立外宾和高干门诊部，开设专门的高干、外宾、特需病区。2006年7月28日被中国奥委会定为“国家队运动员医疗服务指定医院”。
+					</p>
+		 		</div>
+		 		<div class="item block-item_3" style="display: none">
+		 			<!-- <textarea readonly> -->
+		 			<p><h2>网络预约挂号及取号流程</h2></p>
+		 			<p><b>一、电话预约挂号：010-114（24小时）</b></p>
+		 			<p><b>预约挂号：</b><br>
+		 				网络预约地址为：http://www.114yygh.com，可关注“北京114预约挂号”微信公众号。
+		 			</p>
+		 			<p><b>二、放号时间：</b><br>
+						通过电话预约挂号可挂7日内的号源，周一至周五上午8:30投放出第7日新号源，下午14:00停止预约次日号源（周末及节假日除外）。
+		 			</p>	
+					<p><b>三、就诊当日：</b><br>
+						初次来院就诊患者需持患者本人预约时的有效证件先办理注册建档，二代身份证患者可在院内自助机办理注册建档，北京医保患者办理注册建档后需在院内自助机进行医保卡关联。
+		 			</p>
+		 			<p><b>取号方式：</b><br>
+						1、院内自助机取号：
+		 				持患者本人身份证、北京医保卡或就医凭证在指定时间内到医院院内自助机缴费取号，可使用任意银联标识的银行卡、微信和支付宝支付挂号费；<br>
+		 				2、手机APP取号：
+		 				已在我院注册建档的患者，可下载我院官方手机APP，注册后绑定患者信息，通过【预约取号】功能进行取号，北京医保患者在手机APP缴费取号后需持医保卡到院内自助机换医保卡，否则本次就诊为自费。<br>
+		 				3、取号时间：
+		 				上午号必须在就诊日上午9:00前取号，下午号必须在就诊日下午14:00前取号。<br>
+		 				取号成功后需先在院内自助机上报到，再到诊区候诊。<br>
+		 				退号规则：<br>
+		 				本号过期（超过预约就诊日期的工作开始时间）作废，一律不退号。
+		 			</p>
+		 			<!-- </textarea> -->
+		 		</div>
+		 		<div class="item block-item_4" style="display: none">
+		 			<p><h2>停诊信息</h2></p>
+		 			<table class="table_1" cellspacing="0" cellpadding="0">
+		 				<tr>
+		 					<td>日期</td>
+		 					<td>星期</td>
+		 					<td>时段</td>
+		 					<td>科室</td>
+		 					<td>特长</td>
+		 					<td>昵称</td>
+		 					<td>挂号费</td>
+		 					<td>可挂号数</td>
+		 					<td>剩余挂号数</td>
+		 					<td>替换方式</td>
+		 				</tr>
+		 				<tr>
+		 					<td>2019-12-17</td>
+		 					<td>2</td>
+		 					<td>上午</td>
+		 					<td>呼吸内科门诊</td>
+		 					<td>&nbsp;&nbsp;</td>
+		 					<td>主治医师</td>
+		 					<td>500</td>
+		 					<td>0</td>
+		 					<td>0</td>
+		 					<td>不可替换</td>
+		 				</tr>
+		 				<tr>
+		 					<td>2019-12-17</td>
+		 					<td>2</td>
+		 					<td>上午</td>
+		 					<td>呼吸内科门诊</td>
+		 					<td>&nbsp;&nbsp;</td>
+		 					<td>主治医师</td>
+		 					<td>500</td>
+		 					<td>0</td>
+		 					<td>0</td>
+		 					<td>不可替换</td>
+		 				</tr>
+		 				<tr>
+		 					<td>2019-12-17</td>
+		 					<td>2</td>
+		 					<td>上午</td>
+		 					<td>呼吸内科门诊</td>
+		 					<td>&nbsp;&nbsp;</td>
+		 					<td>主治医师</td>
+		 					<td>500</td>
+		 					<td>0</td>
+		 					<td>0</td>
+		 					<td>不可替换</td>
+		 				</tr>
+		 				<tr>
+		 					<td>2019-12-17</td>
+		 					<td>2</td>
+		 					<td>上午</td>
+		 					<td>呼吸内科门诊</td>
+		 					<td>&nbsp;&nbsp;</td>
+		 					<td>主治医师</td>
+		 					<td>500</td>
+		 					<td>0</td>
+		 					<td>0</td>
+		 					<td>不可替换</td>
+		 				</tr>
+		 			</table>
+		 		</div>
+		 		<div class="item block-item_5" style="display: none">
+		 			<div class="block-item_5-center">
+						
+							预约识别码：<input type="text" />
+							<button>查询订单</button>
+						
+		 			</div>
+		 		</div>
+		 	</div>
+	 	</div>
+
+	</div>
+	<div id="footer" class="footer">
+		<footer>
+			关于我们&nbsp;|&nbsp;网站申明<br>
+			Copyright&nbsp;&copy;&nbsp;2017&nbsp;imooc.com&nbsp;All&nbsp;Rights&nbsp;Reserved&nbsp;|&nbsp;京ICP备&nbsp;13046642号-2
+		</footer>
+	</div>
+
+<script type="text/javascript" src="./JS/ui.js"></script>
+</body>	
+</html>
